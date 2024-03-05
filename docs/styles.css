@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+:root {
+  --negro: #393939;
+
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      -webkit-animation: none !important;
+      animation: none !important;
+      -webkit-transition: none !important;
+      transition: none !important;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form,
+input,
+textarea,
+select,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+.nav a {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  font-weight: 700;
+  background-color: #00b3a4dc;
+  width: 7rem;
+  height: 2.7rem;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  line-height: 1.4em;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.image {
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 35rem;
+  width: 100%;
+}
+.header {
+  background-color: #4d5060;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12rem;
+}
+.nav {
+  gap: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+.titulo {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  display: flex;
+  width: 100vw;
+}
+.img {
+  background-image: url(./source/Langostinos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+  background-size: 45rem;
+}
+.direccion {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.button {
+  margin: 20rem 0 0 0;
+  background-color: #ff7d66;
+  color: white;
+  height: 6rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 18rem;
+}
+.right_post {
+  color: black;
+  margin-left: 3rem;
+  height: 100%;
+  width: auto;
+}
+.receta {
+  color: black;
+  margin-left: 3rem;
+  height: 140%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.receta .direccion {
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+.contacto .direccion {
+  font-weight: 800;
+  margin-left: 10rem;
+}
+.footer {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5060;
+}
+
+.parrafo {
+  width: 40rem;
+  font-size: 1.2rem;
+}
+.contacto {
+  color: #4d5060;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  gap: 5rem;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25rem;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  gap: 1rem;
+}
+span {
+  font-weight: 700;
+}
+.Facundo {
+  background-image: url(./source/Facundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+  background-size: 45rem;
+}
+.about {
+  color: black;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-wrap: pretty;
+  height: 100%;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+}
+.hipervinculo a {
+  background-color: #091c873f;
+}
+@media (max-width: 1160px) {
+  .titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+  }
+  .header {
+    padding-right: 3rem;
+  }
+}
